@@ -1,7 +1,7 @@
-# Privacidad y Protección de Datos
+# Privacy and Data Protection Notice
 
-Este repositorio no contiene binarios, ejecutables, drivers, ni datos personales. Solo se publica documentación, scripts de ejemplo y código fuente para referencia educativa.
+This repository does not contain binaries, executables, drivers, or personal data. Only documentation, example scripts, and source code for educational reference are published.
 
-- No subas ni compartas archivos de juegos, binarios propietarios, ni datos sensibles.
-- Si encuentras algún archivo que consideres privado o sensible, por favor avisa para retirarlo.
-- El objetivo es proteger tanto a los usuarios como a los desarrolladores y empresas involucradas.
+- Do not upload or share game files, proprietary binaries, or sensitive data.
+- If you find any file you consider private or sensitive, please notify to have it removed.
+- The goal is to protect both users and developers and the companies involved.
