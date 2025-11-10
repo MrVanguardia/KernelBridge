@@ -1,0 +1,10 @@
+Package: kernelbridge
+Version: 0.1.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Depends: tpm2-tools, libgtk-4-1, libadwaita-1-0
+Maintainer: KernelBridge Team <kernelbridge@example.com>
+Description: KernelBridge - Compatibilidad NT para juegos en Linux
+ KernelBridge permite que juegos con anti-cheat funcionen en Linux
+ usando APIs híbridas y TPM 2.0 real.

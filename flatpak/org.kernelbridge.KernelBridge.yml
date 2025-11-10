@@ -1,0 +1,24 @@
+app-id: org.kernelbridge.KernelBridge
+runtime: org.gnome.Platform
+runtime-version: '44'
+sdk: org.gnome.Sdk
+command: kernelbridge-gui
+
+modules:
+  - name: kernelbridge
+    buildsystem: simple
+    build-commands:
+      - cargo build --release --manifest-path gui/Cargo.toml
+      - install -D gui/target/release/kernelbridge-gui /app/bin/kernelbridge-gui
+      - cargo build --release --manifest-path daemon/Cargo.toml
+      - install -D daemon/target/release/kernelbridge-daemon /app/bin/kernelbridge-daemon
+    sources:
+      - type: dir
+        path: .
+
+finish-args:
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=dri
+  - --filesystem=host:ro  # Para acceso a /dev/tpm0, /proc, etc.
+  - --talk-name=org.freedesktop.DBus

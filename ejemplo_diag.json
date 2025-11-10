@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "timestamp": 0,
+    "os": "linux",
+    "arch": "x86_64",
+    "version": "0.1.0"
+  },
+  "process_list": [
+    { "pid": 1, "ppid": 0, "name": "init" },
+    { "pid": 2345, "ppid": 1, "name": "Xorg" },
+    { "pid": 4321, "ppid": 2345, "name": "gameclient" }
+  ],
+  "attestation": {
+    "attestation": { "tpm_available": true, "ima_status": "enforcing", "evm_status": "enabled" },
+    "pcrs": "omitted for brevity"
+  },
+  "heuristics": {
+    "hypervisor_flag": false,
+    "dmi_vendor": "GENERIC",
+    "dmi_product": "GENERIC",
+    "is_vm": false
+  }
+}
