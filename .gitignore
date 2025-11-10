@@ -1,0 +1,28 @@
+# Ignorar binarios, artefactos y datos sensibles
+Win64/
+logs/
+*.log
+*.exe
+*.dll
+*.sys
+*.so
+*.o
+*.a
+*.lib
+*.pdb
+*.dmp
+*.cache
+*.bak
+*.tmp
+*.swp
+core/target/
+daemon/target/
+gui/target/
+# Ignorar archivos de usuario y sistema
+*.DS_Store
+*.vscode/
+.idea/
+*.iml
+*.sublime*
+# Ignorar archivos de configuración local
+config.toml
